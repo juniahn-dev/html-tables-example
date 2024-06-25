@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  text-align: center;
+}
+
+section {
+  & + & {
+    margin-top: 100px;
+  }
+}
+
+table {
+  border-collapse: collapse;
+
+  width: 90%;
+}
+
+caption {
+  caption-side: bottom;
+  padding: 10px;
+}
+
+.first-table-container {
+  background-color: #dcdcdc;
+
+  .first-table {
+    overflow: hidden;
+
+    background-color: #fff;
+    margin: 10px 70px;
+    border-radius: 10px;
+
+    thead {
+      background-color: #254dff;
+
+      color: #fff;
+    }
+
+    th,
+    td {
+      padding: 10px 0;
+      border-right: 1px solid #c4c4c4;
+
+      &:last-child {
+        border-right: 0;
+      }
+    }
+
+    tbody {
+      tr {
+        border-bottom: 1px solid #c4c4c4;
+
+        &:last-child {
+          border-bottom: 0;
+        }
+      }
+
+      .first-unit {
+        color: #254dff;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.second-table-container {
+  .second-table {
+    margin: 10px 70px;
+
+    th,
+    td {
+      padding: 10px 0;
+      border: 1px solid #254dff;
+    }
+
+    thead {
+      background-color: #7289ef;
+
+      #remove-unit {
+        background-color: white;
+      }
+    }
+
+    tbody {
+      background-color: #d2dbff;
+
+      tr {
+        &:nth-child(2n) {
+          background-color: #acbdff;
+        }
+      }
+    }
+
+    #remove-unit {
+      border: none;
+    }
+  }
+}
+
+.third-table-container {
+  border: 1px solid #000;
+  margin: 100px 300px;
+
+  h2 {
+    background-color: #93eaf5;
+    padding: 10px;
+
+    color: #fff;
+  }
+
+  .third-table {
+    margin: 10px auto;
+
+    th,
+    td {
+      padding: 10px 0;
+      border: 1px solid #93eaf5;
+    }
+
+    .first-unit {
+      display: block;
+
+      border-right: none;
+      border-top: none;
+    }
+
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+
+.fourth-table-container {
+  background-color: #000;
+  margin: 100px 200px;
+
+  color: #fff;
+  text-align: right;
+
+  th,
+  td {
+    padding: 10px 0;
+    border-top: 1px solid #7b7b7b;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .fourth-table {
+    width: 100%;
+    margin: 20px 0;
+
+    .align-right {
+      text-align: left;
+      padding-left: 10px;
+
+      img {
+        width: 25px;
+        height: 25px;
+      }
+
+      p {
+        display: inline;
+      }
+    }
+
+    .up-price {
+      color: #00ff15;
+    }
+
+    .down-price {
+      color: #ff0000;
+    }
+  }
+}
